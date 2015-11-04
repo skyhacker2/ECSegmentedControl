@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ECSegmentedControl</string>
+    <array name="segmentedTexts">
+        <item>经典</item>
+        <item>摇滚</item>
+        <item>爵士</item>
+        <item>正常</item>
+    </array>
+</resources>

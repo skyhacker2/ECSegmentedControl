@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.eleven.lib.ecsegmentedcontrol.MainActivity">
+
+    <com.eleven.lib.library.ECSegmentedControl
+        android:id="@+id/segmentedControl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:textSize="13sp"
+        app:segmentedBackground="@mipmap/ic_segmentedcontrol_bg"
+        app:segmentedForeground="@mipmap/ic_segmentedcontrol_fg"
+        app:textColor="@color/selector_sct1"
+        app:segmentedTexts="@array/segmentedTexts"
+        app:segmentedEnableDivider="true"
+        app:segmentedDivider="@mipmap/ic_divider"/>
+
+    <com.eleven.lib.library.ECSegmentedControl
+        android:id="@+id/segmentedControl2"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:segmentedTexts="@array/segmentedTexts"/>
+
+    <com.eleven.lib.library.ECSegmentedControl
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:segmentedEnableDivider="true"
+        app:textColor="@color/selector_sct2"
+        app:segmentedDivider="@drawable/selector_segmented_divider"
+        app:segmentedBackground="@drawable/selector_segmented_bg"
+        app:segmentedForeground="@drawable/selector_segmented_fg"/>
+</LinearLayout>

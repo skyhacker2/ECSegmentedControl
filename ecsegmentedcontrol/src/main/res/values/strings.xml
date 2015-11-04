@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Library</string>
+    <array name="segments">
+        <item>Segment1</item>
+        <item>Segment2</item>
+        <item>Segment3</item>
+    </array>
+</resources>
