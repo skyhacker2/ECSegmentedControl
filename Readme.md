@@ -9,7 +9,7 @@ iOS的UISegmentedContorl控件在Android上的实现
 
 ```
 dependencies {
-    compile 'com.eleven.lib.ecsegmentedcontrol:+'
+    compile 'com.eleven.lib:ecsegmentedcontrol:+'
 }
 ```
 
@@ -103,6 +103,24 @@ selector_segmented_divider:
     <solid android:color="@color/colorAccent"/>
     <size android:width="3px"/>
 </shape>
+```
+
+
+### 事件监听
+
+```
+mSegmentedControl.setECSegmentedControlListener(new ECSegmentedControl.ECSegmentedControlListener() {
+    @Override
+    public void onSelectIndex(int index) {
+        Log.d(TAG, "select index " + index);
+    }
+});
+```
+
+选择选中的index
+
+```
+mSegmentedControl2.setSelectedIndex(2);
 ```
 
 ## Attributes
